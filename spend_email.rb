@@ -4,7 +4,7 @@ require 'gmail_xoauth'
 require "google_drive"
 session = GoogleDrive::Session.from_config("config.json")#fichier a importer soit meme
 ws = session.spreadsheet_by_key("1YEwES38uA1BR3FQ0Z7JeMQa7dys6RQsPVWb4L2aYIKY").worksheets[0]
-gmail = Gmail.connect(".........", "......")
+gmail = Gmail.connect("vanakam.nandri@gmail.com", "azertyuiop14")
 
 for i in (1..204)do
 s = ws[i,4]
